@@ -7,13 +7,13 @@ from pathlib import Path
 if len(sys.argv) < 2:
     print("Usage: python api_chart_plotly.py <path_to_csv> [output.html]")
     print("  <path_to_csv>  CSV with EventDate and EventComments columns")
-    print("  [output.html]  Output file (default: api_report_gemini.html)")
+    print("  [output.html]  Output file (default: api_report_chart.html)")
     sys.exit(1)
 csv_path    = Path(sys.argv[1])
 output_path = Path(sys.argv[2]) if len(sys.argv) > 2 else Path("api_report_chart.html")
 
 # 1. Load and Clean Data
-df = pd.read_csv('api_logs.csv', parse_dates=['EventDate'])
+df = pd.read_csv(csv_path, parse_dates=['EventDate'])
 
 
 def extract_info(text):
