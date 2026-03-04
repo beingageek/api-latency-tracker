@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 
 if len(sys.argv) < 2:
-    print("Usage: python api_chart_gemini.py <path_to_csv> [output.html]")
+    print("Usage: python api_chart_plotly.py <path_to_csv> [output.html]")
     print("  <path_to_csv>  CSV with EventDate and EventComments columns")
     print("  [output.html]  Output file (default: api_report_gemini.html)")
     sys.exit(1)

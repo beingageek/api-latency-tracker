@@ -1,6 +1,6 @@
 # Documentation: API Performance Visualizer using Plotly.js
 
-**File:** `api_chart_gemini.py`  
+**File:** `api_chart_plotly.py`  
 **Output:** A single self-contained `.html` file with interactive charts  
 **Python version:** 3.8+
 
@@ -77,17 +77,17 @@ pip install pandas plotly
 ### Running
 
 ```bash
-python api_chart_gemini.py <path_to_csv>
+python api_chart_plotly.py <path_to_csv>
 # Output: api_report_plotly.html (same directory)
 
-python api_chart_gemini.py <path_to_csv> my_report.html
+python api_chart_plotly.py <path_to_csv> my_report.html
 # Output: my_report.html at the specified path
 ```
 
 ### Example
 
 ```bash
-python api_chart_gemini.py logs/api_logs.csv reports/performance.html
+python api_chart_plotly.py logs/api_logs.csv reports/performance.html
 ```
 
 > **Note on Performance:** For datasets exceeding 100,000 records, the HTML file size may increase significantly. In such cases, consider resampling the data to hourly medians within the Python script before passing it to the visualization functions.

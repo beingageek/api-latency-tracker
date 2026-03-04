@@ -35,7 +35,7 @@ The following two steps form a complete testing and reporting loop:
 * It builds a standalone **HTML Dashboard**.
 * **Goal:** To provide an executive-level view with engineer-level detail (drill-down).
 
-The project offers two distinct visualization engines: **`api_chart_claude.py`**, which leverages the high-performance Chart.js library for web-native rendering, and **`api_chart_gemini.py`**, which utilizes Plotly for deep, scientific-grade interactivity. Each script provides a unique visual perspective and different chart layouts to suit various analytical needs.
+The project offers two distinct visualization engines: **`api_chart_chartjs.py`**, which leverages the high-performance Chart.js library for web-native rendering, and **`api_chart_plotly.py`**, which utilizes Plotly for deep, scientific-grade interactivity. Each script provides a unique visual perspective and different chart layouts to suit various analytical needs.
 
 
 ---

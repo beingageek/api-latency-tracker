@@ -11,7 +11,7 @@ HTML file with interactive Chart.js charts for:
 
 Usage:
     pip install pandas
-    python api_chart_claude.py <path_to_csv> [output.html]
+    python api_chart_chartjs.py <path_to_csv> [output.html]
 """
 
 import json
@@ -685,7 +685,7 @@ function makeTabs(containerId, labels, cb) {
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python api_chart_claude.py <path_to_csv> [output.html]")
+        print("Usage: python api_chart_chartjs.py <path_to_csv> [output.html]")
         print("  <path_to_csv>  CSV with EventDate and EventComments columns")
         print("  [output.html]  Output file (default: api_report_plotly.html)")
         sys.exit(1)

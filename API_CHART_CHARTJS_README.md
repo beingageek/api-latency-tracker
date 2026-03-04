@@ -1,6 +1,6 @@
 # Documentation: API Performance Visualizer using Chart.js
 
-**File:** `api_chart_claude.py`  
+**File:** `api_chart_chartjs.py`  
 **Output:** A single self-contained `.html` file with interactive charts  
 **Python version:** 3.8+
 
@@ -10,7 +10,7 @@
 
 ## Overview
 
-`api_chart_claude.py` is a Python script that reads a CSV log file containing API event records, aggregates the data across several time dimensions, and produces a **single self-contained HTML file** with fully interactive charts. The output file has no external dependencies beyond a CDN connection for JavaScript libraries — it can be opened directly in any modern browser without a web server.
+`api_chart_chartjs.py` is a Python script that reads a CSV log file containing API event records, aggregates the data across several time dimensions, and produces a **single self-contained HTML file** with fully interactive charts. The output file has no external dependencies beyond a CDN connection for JavaScript libraries — it can be opened directly in any modern browser without a web server.
 
 The report covers six chart views:
 
@@ -38,17 +38,17 @@ pip install pandas
 ### Running
 
 ```bash
-python api_chart_claude.py <path_to_csv>
+python api_chart_chartjs.py <path_to_csv>
 # Output: api_report_plotly.html (same directory)
 
-python api_chart_claude.py <path_to_csv> my_report.html
+python api_chart_chartjs.py <path_to_csv> my_report.html
 # Output: my_report.html at the specified path
 ```
 
 ### Example
 
 ```bash
-python api_chart_claude.py logs/api_logs.csv reports/performance.html
+python api_chart_chartjs.py logs/api_logs.csv reports/performance.html
 ```
 
 The script prints a summary to stdout as it runs:
